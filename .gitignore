@@ -1,0 +1,16 @@
+# ignore everything in .xcodeproj except project.pbxproj
+.xcodeproj/
+!*.xcodeproj/project.pbxproj
+
+# ignore all build products
+build/
+Release/
+Debug/
+
+# ignore finder spams
+.DS_Store
+
+# ignore other things...
+*.swp
+*~.nib
+.svn
