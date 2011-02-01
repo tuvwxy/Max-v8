@@ -22,7 +22,7 @@
 		382C5C3710B5F1D70081E97D /* v8~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "v8~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A0A16F10B5FD3D00E4CF62 /* MaxV8~.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "MaxV8~.cc"; sourceTree = "<group>"; };
 		38EB656712C9EE380070A7A8 /* MaxV8~.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MaxV8~.h"; sourceTree = "<group>"; };
-		38EB658D12C9F6020070A7A8 /* libv8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8.a; path = ../Libs/v8/libv8.a; sourceTree = "<group>"; };
+		38EB658D12C9F6020070A7A8 /* libv8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8.a; path = ../lib/v8/libv8.a; sourceTree = "<group>"; };
 		38EB659F12C9F75D0070A7A8 /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 				38EB659F12C9F75D0070A7A8 /* main.cc */,
 			);
 			name = Source;
-			path = "../../../../../../Programming/Codes/maxmsp/externals/v8~/Source";
+			path = ../src;
 			sourceTree = "<group>";
 		};
 		382C5C2610B5F1820081E97D /* External Frameworks and Libraries */ = {
@@ -173,6 +173,8 @@
 			baseConfigurationReference = 382C5C1A10B5F15E0081E97D /* maxmspsdk-debug.xcconfig */;
 			buildSettings = {
 				ARCHS = i386;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
 				VALID_ARCHS = i386;
 			};
 			name = Debug;
@@ -182,6 +184,8 @@
 			baseConfigurationReference = 382C5C1B10B5F15E0081E97D /* maxmspsdk-release.xcconfig */;
 			buildSettings = {
 				ARCHS = i386;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
 				VALID_ARCHS = i386;
 			};
 			name = Release;
